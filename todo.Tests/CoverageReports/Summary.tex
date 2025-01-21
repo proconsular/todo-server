@@ -1,0 +1,1338 @@
+\documentclass[a4paper,landscape,10pt]{article}
+\usepackage[paper=a4paper,landscape,left=20mm,right=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{color}
+\usepackage{colortbl}
+\definecolor{green}{rgb}{0.04,0.68,0.04}
+\definecolor{orange}{rgb}{0.97,0.65,0.12}
+\definecolor{red}{rgb}{0.75,0.04,0.04}
+\definecolor{gray}{rgb}{0.86,0.86,0.86}
+
+\usepackage[pdftex,
+            colorlinks=true, linkcolor=red, urlcolor=green, citecolor=red,%
+            raiselinks=true,%
+            bookmarks=true,%
+            bookmarksopenlevel=1,%
+            bookmarksopen=true,%
+            bookmarksnumbered=true,%
+            hyperindex=true,% 
+            plainpages=false,% correct hyperlinks
+            pdfpagelabels=true%,% view TeX pagenumber in PDF reader
+            %pdfborder={0 0 0.5}
+            ]{hyperref}
+
+\hypersetup{pdftitle={Coverage Report},
+            pdfauthor={ReportGenerator - 5.4.3.0}
+           }
+
+\pagestyle{fancy}
+\fancyhead[LE,LO]{\leftmark}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{ReportGenerator - 5.4.3.0}
+
+\begin{document}
+
+\setcounter{secnumdepth}{-1}
+\section{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Generated on:} & 1/18/2025 - 5:37:04 PM\\
+\textbf{Coverage date:} & 1/18/2025 - 5:24:39 PM\\
+\textbf{Parser:} & Cobertura\\
+\textbf{Assemblies:} & 1\\
+\textbf{Classes:} & 12\\
+\textbf{Files:} & 16\\
+\textbf{Covered lines:} & 103\\
+\textbf{Uncovered lines:} & 336\\
+\textbf{Coverable lines:} & 439\\
+\textbf{Total lines:} & 760\\
+\textbf{Line coverage:} & 23.4\% (103 of 439)\\
+\textbf{Covered branches:} & 8\\
+\textbf{Total branches:} & 10\\
+\textbf{Branch coverage:} & 80\% (8 of 10)\\
+\textbf{Covered methods:} & 20\\
+\textbf{Fully covered methods:} & 13\\
+\textbf{Total methods:} & 47\\
+\textbf{Method coverage:} & 42.5\% (20 of 47)\\
+\textbf{Full method coverage:} & 27.6\% (13 of 47)\\
+\end{longtable}
+\section{Risk Hotspots}
+No risk hotspots found.
+\section{Coverage}
+\begin{longtable}[l]{|l|r|r|r|r|r|r|r|}
+\hline
+\textbf{Name} & \textbf{Covered} & \textbf{Uncovered} & \textbf{Coverable} & \textbf{Total} & \textbf{Line coverage} & \textbf{Branch coverage} & \textbf{Method coverage}\\
+\hline
+\textbf{todo} & \textbf{103} & \textbf{336} & \textbf{439} & \textbf{760} & \textbf{23.4\%} & \textbf{80\%} & \textbf{42.5\%}\\
+\hline
+Todo.Controllers.HealthController & 3 & 0 & 3 & 12 & 100\% &  & 100\%\\
+\hline
+Todo.Controllers.TodoItemsController & 64 & 0 & 64 & 99 & 100\% & 100\% & 100\%\\
+\hline
+Todo.Data.ApplicationDbContext & 0 & 5 & 5 & 16 & 0\% &  & 0\%\\
+\hline
+Todo.Data.TodoRepository & 0 & 27 & 27 & 52 & 0\% &  & 0\%\\
+\hline
+todo.Migrations.Addedmaxlengthtotitle & 0 & 57 & 57 & 98 & 0\% &  & 0\%\\
+\hline
+todo.Migrations.ApplicationDbContextModelSnapshot & 0 & 32 & 32 & 54 & 0\% &  & 0\%\\
+\hline
+todo.Migrations.Changestitlemaxto40 & 0 & 58 & 58 & 99 & 0\% &  & 0\%\\
+\hline
+todo.Migrations.Init & 0 & 55 & 55 & 99 & 0\% &  & 0\%\\
+\hline
+todo.Migrations.Madetitlerequired & 0 & 65 & 65 & 107 & 0\% &  & 0\%\\
+\hline
+Todo.Models.TodoItem & 5 & 0 & 5 & 13 & 100\% &  & 100\%\\
+\hline
+Todo.Program & 0 & 37 & 37 & 62 & 0\% & 0\% & 0\%\\
+\hline
+Todo.Services.TodoItemsService & 31 & 0 & 31 & 49 & 100\% & 100\% & 100\%\\
+\hline
+\end{longtable}
+\newpage
+\section{Todo.Controllers.HealthController}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Todo.Controllers.HealthController\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{o/Objects/1-Projects/4-Cs/todo/server/todo/src/Controllers/HealthController.cs}\end{minipage} \\
+\textbf{Covered lines:} & 3\\
+\textbf{Uncovered lines:} & 0\\
+\textbf{Coverable lines:} & 3\\
+\textbf{Total lines:} & 12\\
+\textbf{Line coverage:} & 100\% (3 of 3)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 1\\
+\textbf{Fully covered methods:} & 1\\
+\textbf{Total methods:} & 1\\
+\textbf{Method coverage:} & 100\% (1 of 1)\\
+\textbf{Full method coverage:} & 100\% (1 of 1)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{Check()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{o/Objects/1-Projects/4-Cs/todo/server/todo/src/Controllers/HealthController.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using Microsoft.AspNetCore.Mvc;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~namespace Todo.Controllers {~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~    [Route("api/[controller]")]~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~    [ApiController]~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~    public class HealthController : ControllerBase {~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~        [HttpGet]~\\
+\cellcolor{green} & 1 & \verb~8~ & & \verb~        public IActionResult Check() {~\\
+\cellcolor{green} & 1 & \verb~9~ & & \verb~            return Ok();~\\
+\cellcolor{green} & 1 & \verb~10~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{Todo.Controllers.TodoItemsController}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Todo.Controllers.TodoItemsController\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{bjects/1-Projects/4-Cs/todo/server/todo/src/Controllers/TodoItemsController.cs}\end{minipage} \\
+\textbf{Covered lines:} & 64\\
+\textbf{Uncovered lines:} & 0\\
+\textbf{Coverable lines:} & 64\\
+\textbf{Total lines:} & 99\\
+\textbf{Line coverage:} & 100\% (64 of 64)\\
+\textbf{Covered branches:} & 6\\
+\textbf{Total branches:} & 6\\
+\textbf{Branch coverage:} & 100\% (6 of 6)\\
+\textbf{Covered methods:} & 7\\
+\textbf{Fully covered methods:} & 1\\
+\textbf{Total methods:} & 7\\
+\textbf{Method coverage:} & 100\% (7 of 7)\\
+\textbf{Full method coverage:} & 14.2\% (1 of 7)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{.ctor(...)} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{GetAllItemsAsync()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{GetItemAsync()} & 100\% & 2 & 2 & 100\%\\
+\hline
+\textbf{CreateItemAsync()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{UpdateItemAsync()} & 100\% & 2 & 2 & 100\%\\
+\hline
+\textbf{DeleteItemAsync()} & 100\% & 2 & 2 & 100\%\\
+\hline
+\textbf{DeleteItemsAsync()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{bjects/1-Projects/4-Cs/todo/server/todo/src/Controllers/TodoItemsController.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using Microsoft.AspNetCore.Mvc;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Todo.Models;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using Todo.Services;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~namespace Todo.Controllers {~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~    [Route("api/[controller]")]~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~    [ApiController]~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    public class TodoItemsController : ControllerBase {~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~        private readonly ILogger<TodoItemsController> _logger;~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~        private readonly ITodoItemsService _service;~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~~\\
+\cellcolor{green} & 30 & \verb~13~ & & \verb~        public TodoItemsController(ITodoItemsService service, ILogger<TodoItemsController> logger) {~\\
+\cellcolor{green} & 15 & \verb~14~ & & \verb~            _service = service;~\\
+\cellcolor{green} & 15 & \verb~15~ & & \verb~            _logger = logger;~\\
+\cellcolor{green} & 15 & \verb~16~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~17~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~        [HttpGet]~\\
+\cellcolor{green} & 2 & \verb~19~ & & \verb~        public async Task<IActionResult> GetAllItemsAsync() {~\\
+\cellcolor{green} & 2 & \verb~20~ & & \verb~            try {~\\
+\cellcolor{green} & 2 & \verb~21~ & & \verb~                var items = await _service.GetTodoItemsAsync();~\\
+\cellcolor{green} & 1 & \verb~22~ & & \verb~                _logger.LogInformation("Retrieved {count} todo items", items.Count());~\\
+\cellcolor{green} & 1 & \verb~23~ & & \verb~                return Ok(items);~\\
+\cellcolor{green} & 2 & \verb~24~ & & \verb~            } catch (Exception ex) {~\\
+\cellcolor{green} & 1 & \verb~25~ & & \verb~                _logger.LogError(ex, "Error retrieving todo items");~\\
+\cellcolor{green} & 1 & \verb~26~ & & \verb~                return StatusCode(500, "An error occurred while retrieving todo items");~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~            }~\\
+\cellcolor{green} & 2 & \verb~28~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~29~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~30~ & & \verb~        [HttpGet("{id}")]~\\
+\cellcolor{green} & 3 & \verb~31~ & & \verb~        public async Task<IActionResult> GetItemAsync(int id) {~\\
+\cellcolor{green} & 3 & \verb~32~ & & \verb~            try {~\\
+\cellcolor{green} & 3 & \verb~33~ & & \verb~                var item = await _service.GetTodoItemAsync(id);~\\
+\cellcolor{green} & 3 & \verb~34~ & & \verb~                if (item == null) {~\\
+\cellcolor{green} & 1 & \verb~35~ & & \verb~                    return NotFound();~\\
+\cellcolor{gray} &  & \verb~36~ & & \verb~                }~\\
+\cellcolor{green} & 1 & \verb~37~ & & \verb~                return Ok(item);~\\
+\cellcolor{green} & 2 & \verb~38~ & & \verb~            } catch (Exception ex) {~\\
+\cellcolor{green} & 1 & \verb~39~ & & \verb~                _logger.LogError(ex, "Error retrieving todo item with id {id}", id);~\\
+\cellcolor{green} & 1 & \verb~40~ & & \verb~                return StatusCode(500, "An error occurred while retrieving todo item");~\\
+\cellcolor{gray} &  & \verb~41~ & & \verb~            }~\\
+\cellcolor{green} & 3 & \verb~42~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~43~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~44~ & & \verb~        [HttpPost]~\\
+\cellcolor{green} & 2 & \verb~45~ & & \verb~        public async Task<IActionResult> CreateItemAsync([FromBody] TodoItem item) {~\\
+\cellcolor{green} & 2 & \verb~46~ & & \verb~            try {~\\
+\cellcolor{green} & 2 & \verb~47~ & & \verb~                var record = await _service.CreateTodoItemAsync(item);~\\
+\cellcolor{green} & 1 & \verb~48~ & & \verb~                _logger.LogInformation("Created todo item with id {id}", record.Id);~\\
+\cellcolor{green} & 1 & \verb~49~ & & \verb~                return Created($"api/todoitems/{record.Id}", record);~\\
+\cellcolor{green} & 2 & \verb~50~ & & \verb~            } catch (Exception ex) {~\\
+\cellcolor{green} & 1 & \verb~51~ & & \verb~                _logger.LogError(ex, "Error creating todo item");~\\
+\cellcolor{green} & 1 & \verb~52~ & & \verb~                return StatusCode(500, "An error occurred while creating the todo item");~\\
+\cellcolor{gray} &  & \verb~53~ & & \verb~            }~\\
+\cellcolor{green} & 2 & \verb~54~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~55~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~56~ & & \verb~        [HttpPut("{id}")]~\\
+\cellcolor{green} & 3 & \verb~57~ & & \verb~        public async Task<IActionResult> UpdateItemAsync(int id, [FromBody] TodoItem item) {~\\
+\cellcolor{green} & 3 & \verb~58~ & & \verb~            try {~\\
+\cellcolor{green} & 4 & \verb~59~ & & \verb~                if (id != item.Id) {~\\
+\cellcolor{green} & 1 & \verb~60~ & & \verb~                    return BadRequest();~\\
+\cellcolor{gray} &  & \verb~61~ & & \verb~                }~\\
+\cellcolor{green} & 2 & \verb~62~ & & \verb~                await _service.UpdateTodoItemAsync(item);~\\
+\cellcolor{green} & 1 & \verb~63~ & & \verb~                _logger.LogInformation("Updated todo item with id {id}", id);~\\
+\cellcolor{green} & 1 & \verb~64~ & & \verb~                return NoContent();~\\
+\cellcolor{green} & 2 & \verb~65~ & & \verb~            } catch (Exception ex) {~\\
+\cellcolor{green} & 1 & \verb~66~ & & \verb~                _logger.LogError(ex, "Error updating todo item with id {id}", id);~\\
+\cellcolor{green} & 1 & \verb~67~ & & \verb~                return StatusCode(500, "An error occurred while updating the todo item");~\\
+\cellcolor{gray} &  & \verb~68~ & & \verb~            }~\\
+\cellcolor{green} & 3 & \verb~69~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~70~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~71~ & & \verb~        [HttpDelete("{id}")]~\\
+\cellcolor{green} & 3 & \verb~72~ & & \verb~        public async Task<IActionResult> DeleteItemAsync(int id) {~\\
+\cellcolor{green} & 3 & \verb~73~ & & \verb~            try {~\\
+\cellcolor{green} & 3 & \verb~74~ & & \verb~                bool deleted = await _service.DeleteTodoItemAsync(id);~\\
+\cellcolor{green} & 3 & \verb~75~ & & \verb~                if (deleted) {~\\
+\cellcolor{green} & 1 & \verb~76~ & & \verb~                    _logger.LogInformation("Deleted todo item with id {id}", id);~\\
+\cellcolor{green} & 1 & \verb~77~ & & \verb~                    return NoContent();~\\
+\cellcolor{green} & 1 & \verb~78~ & & \verb~                } else {~\\
+\cellcolor{green} & 1 & \verb~79~ & & \verb~                    return NotFound();~\\
+\cellcolor{gray} &  & \verb~80~ & & \verb~                }~\\
+\cellcolor{green} & 2 & \verb~81~ & & \verb~            } catch (Exception ex) {~\\
+\cellcolor{green} & 1 & \verb~82~ & & \verb~                _logger.LogError(ex, "Error deleting todo item with id {id}", id);~\\
+\cellcolor{green} & 1 & \verb~83~ & & \verb~                return StatusCode(500, "An error occurred while deleting the todo item");~\\
+\cellcolor{gray} &  & \verb~84~ & & \verb~            }~\\
+\cellcolor{green} & 3 & \verb~85~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~86~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~87~ & & \verb~        [HttpDelete]~\\
+\cellcolor{green} & 2 & \verb~88~ & & \verb~        public async Task<IActionResult> DeleteItemsAsync([FromBody] IEnumerable<int> ids) {~\\
+\cellcolor{green} & 2 & \verb~89~ & & \verb~            try {~\\
+\cellcolor{green} & 2 & \verb~90~ & & \verb~                var deletedIds = await _service.DeleteTodoItemsAsync(ids);~\\
+\cellcolor{green} & 1 & \verb~91~ & & \verb~                _logger.LogInformation("Deleted {count} todo items", deletedIds.Count());~\\
+\cellcolor{green} & 1 & \verb~92~ & & \verb~                return Ok(deletedIds);~\\
+\cellcolor{green} & 2 & \verb~93~ & & \verb~            } catch (Exception ex) {~\\
+\cellcolor{green} & 1 & \verb~94~ & & \verb~                _logger.LogError(ex, "Error deleting todo items");~\\
+\cellcolor{green} & 1 & \verb~95~ & & \verb~                return StatusCode(500, "An error occurred while deleting the todo items");~\\
+\cellcolor{gray} &  & \verb~96~ & & \verb~            }~\\
+\cellcolor{green} & 2 & \verb~97~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~98~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~99~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{Todo.Data.ApplicationDbContext}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Todo.Data.ApplicationDbContext\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{/Objects/1-Projects/4-Cs/todo/server/todo/src/Contexts/ApplicationDbContext.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 5\\
+\textbf{Coverable lines:} & 5\\
+\textbf{Total lines:} & 16\\
+\textbf{Line coverage:} & 0\% (0 of 5)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 3\\
+\textbf{Method coverage:} & 0\% (0 of 3)\\
+\textbf{Full method coverage:} & 0\% (0 of 3)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{get\_TodoItems()} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{.ctor(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{OnModelCreating(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{/Objects/1-Projects/4-Cs/todo/server/todo/src/Contexts/ApplicationDbContext.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using Todo.Models;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~namespace Todo.Data {~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~    public class ApplicationDbContext: DbContext {~\\
+\cellcolor{red} & 0 & \verb~6~ & & \verb~        public DbSet<TodoItem> TodoItems { get; set; }~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~8~ & & \verb~        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~10~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~        protected override void OnModelCreating(ModelBuilder modelBuilder)~\\
+\cellcolor{red} & 0 & \verb~13~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~14~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{Todo.Data.TodoRepository}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Todo.Data.TodoRepository\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{luttio/Objects/1-Projects/4-Cs/todo/server/todo/src/Contexts/TodoRepository.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 27\\
+\textbf{Coverable lines:} & 27\\
+\textbf{Total lines:} & 52\\
+\textbf{Line coverage:} & 0\% (0 of 27)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 8\\
+\textbf{Method coverage:} & 0\% (0 of 8)\\
+\textbf{Full method coverage:} & 0\% (0 of 8)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{.ctor(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{GetAllAsync()} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{GetByIdAsync()} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{AddAsync()} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{UpdateAsync(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{GetByIdsAsync()} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{RemoveRangeAsync(...} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{SaveChangesAsync()} & 100\% & 2 & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{luttio/Objects/1-Projects/4-Cs/todo/server/todo/src/Contexts/TodoRepository.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Todo.Models;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~namespace Todo.Data {~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~    public class TodoRepository : ITodoRepository~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~        private readonly ApplicationDbContext _context;~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~10~ & & \verb~        public TodoRepository(ApplicationDbContext context)~\\
+\cellcolor{red} & 0 & \verb~11~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~12~ & & \verb~            _context = context;~\\
+\cellcolor{red} & 0 & \verb~13~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~        public async Task<IEnumerable<TodoItem>> GetAllAsync()~\\
+\cellcolor{red} & 0 & \verb~16~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~            return await _context.TodoItems.ToListAsync();~\\
+\cellcolor{red} & 0 & \verb~18~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~20~ & & \verb~        public async Task<TodoItem?> GetByIdAsync(int id)~\\
+\cellcolor{red} & 0 & \verb~21~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~            return await _context.TodoItems.FindAsync(id);~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~24~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~        public async Task AddAsync(TodoItem item)~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~27~ & & \verb~            await _context.TodoItems.AddAsync(item);~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~29~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~30~ & & \verb~        public Task UpdateAsync(TodoItem item)~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~            _context.Entry(item).State = EntityState.Modified;~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~            return Task.CompletedTask;~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~35~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~36~ & & \verb~        public async Task<IEnumerable<TodoItem>> GetByIdsAsync(IEnumerable<int> ids)~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~            return await _context.TodoItems.Where(item => ids.Contains(item.Id)).ToListAsync();~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~40~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~41~ & & \verb~        public Task RemoveRangeAsync(IEnumerable<TodoItem> items)~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~            _context.TodoItems.RemoveRange(items);~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~            return Task.CompletedTask;~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~46~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~47~ & & \verb~        public async Task SaveChangesAsync()~\\
+\cellcolor{red} & 0 & \verb~48~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~49~ & & \verb~            await _context.SaveChangesAsync();~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~51~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~52~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{todo.Migrations.Addedmaxlengthtotitle}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & todo.Migrations.Addedmaxlengthtotitle\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{s/4-Cs/todo/server/todo/Migrations/20250116004234\_Added max length to title.cs\\do/server/todo/Migrations/20250116004234\_Added max length to title.Designer.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 57\\
+\textbf{Coverable lines:} & 57\\
+\textbf{Total lines:} & 98\\
+\textbf{Line coverage:} & 0\% (0 of 57)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 3\\
+\textbf{Method coverage:} & 0\% (0 of 3)\\
+\textbf{Full method coverage:} & 0\% (0 of 3)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{Up(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{BuildTargetModel(...} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{Down(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{s/4-Cs/todo/server/todo/Migrations/20250116004234\_Added max length to title.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~    /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~    public partial class Addedmaxlengthtotitle : Migration~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~        protected override void Up(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~12~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~13~ & & \verb~            migrationBuilder.AlterColumn<string>(~\\
+\cellcolor{red} & 0 & \verb~14~ & & \verb~                name: "Title",~\\
+\cellcolor{red} & 0 & \verb~15~ & & \verb~                table: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~16~ & & \verb~                type: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~                maxLength: 20,~\\
+\cellcolor{red} & 0 & \verb~18~ & & \verb~                nullable: true,~\\
+\cellcolor{red} & 0 & \verb~19~ & & \verb~                oldClrType: typeof(string),~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~                oldType: "longtext",~\\
+\cellcolor{red} & 0 & \verb~21~ & & \verb~                oldNullable: true)~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4")~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                .OldAnnotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~26~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~        protected override void Down(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~            migrationBuilder.AlterColumn<string>(~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                name: "Title",~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                table: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                type: "longtext",~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~                nullable: true,~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                oldClrType: typeof(string),~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~                oldType: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                oldMaxLength: 20,~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                oldNullable: true)~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4")~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                .OldAnnotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~41~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~42~ & & \verb~}~\\
+\end{longtable}
+\subsubsection{do/server/todo/Migrations/20250116004234\_Added max length to title.Designer.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~// <auto-generated />~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using Microsoft.EntityFrameworkCore.Infrastructure;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using Microsoft.EntityFrameworkCore.Metadata;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~using Microsoft.EntityFrameworkCore.Storage.ValueConversion;~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~    [DbContext(typeof(ApplicationDbContext))]~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~    [Migration("20250116004234_Added max length to title")]~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~    partial class Addedmaxlengthtotitle~\\
+\cellcolor{gray} &  & \verb~17~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~        protected override void BuildTargetModel(ModelBuilder modelBuilder)~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~        {~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~#pragma warning disable 612, 618~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~            modelBuilder~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                .HasAnnotation("ProductVersion", "8.0.2")~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~                .HasAnnotation("Relational:MaxIdentifierLength", 64);~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~            modelBuilder.Entity("Todo.Models.TodoItem", b =>~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                {~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                    b.Property<int>("Id")~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                        .ValueGeneratedOnAdd()~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                        .HasColumnType("int");~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                    b.Property<DateTime>("CreatedAt")~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                    b.Property<bool>("IsDone")~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~                        .HasColumnType("tinyint(1)");~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~                    b.Property<string>("Title")~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~                        .HasMaxLength(20)~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~                        .HasColumnType("varchar(20)");~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~                    b.Property<DateTime>("UpdatedAt")~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~48~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~49~ & & \verb~                    b.HasKey("Id");~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~51~ & & \verb~                    b.ToTable("TodoItems");~\\
+\cellcolor{red} & 0 & \verb~52~ & & \verb~                });~\\
+\cellcolor{gray} &  & \verb~53~ & & \verb~#pragma warning restore 612, 618~\\
+\cellcolor{red} & 0 & \verb~54~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~55~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~56~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{todo.Migrations.ApplicationDbContextModelSnapshot}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & todo.Migrations.ApplicationDbContextModelSnapshot\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{Projects/4-Cs/todo/server/todo/Migrations/ApplicationDbContextModelSnapshot.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 32\\
+\textbf{Coverable lines:} & 32\\
+\textbf{Total lines:} & 54\\
+\textbf{Line coverage:} & 0\% (0 of 32)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 1\\
+\textbf{Method coverage:} & 0\% (0 of 1)\\
+\textbf{Full method coverage:} & 0\% (0 of 1)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{BuildModel(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{Projects/4-Cs/todo/server/todo/Migrations/ApplicationDbContextModelSnapshot.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~// <auto-generated />~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using Microsoft.EntityFrameworkCore.Infrastructure;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using Microsoft.EntityFrameworkCore.Metadata;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~using Microsoft.EntityFrameworkCore.Storage.ValueConversion;~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~    [DbContext(typeof(ApplicationDbContext))]~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~    partial class ApplicationDbContextModelSnapshot : ModelSnapshot~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~        protected override void BuildModel(ModelBuilder modelBuilder)~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~        {~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~#pragma warning disable 612, 618~\\
+\cellcolor{red} & 0 & \verb~19~ & & \verb~            modelBuilder~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~                .HasAnnotation("ProductVersion", "8.0.2")~\\
+\cellcolor{red} & 0 & \verb~21~ & & \verb~                .HasAnnotation("Relational:MaxIdentifierLength", 64);~\\
+\cellcolor{gray} &  & \verb~22~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);~\\
+\cellcolor{gray} &  & \verb~24~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~25~ & & \verb~            modelBuilder.Entity("Todo.Models.TodoItem", b =>~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~                {~\\
+\cellcolor{red} & 0 & \verb~27~ & & \verb~                    b.Property<int>("Id")~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~                        .ValueGeneratedOnAdd()~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                        .HasColumnType("int");~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~                    b.Property<DateTime>("CreatedAt")~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                    b.Property<bool>("IsDone")~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                        .HasColumnType("tinyint(1)");~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                    b.Property<string>("Title")~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~                        .IsRequired()~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~                        .HasMaxLength(40)~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~                        .HasColumnType("varchar(40)");~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~                    b.Property<DateTime>("UpdatedAt")~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~                    b.HasKey("Id");~\\
+\cellcolor{red} & 0 & \verb~48~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~49~ & & \verb~                    b.ToTable("TodoItems");~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~                });~\\
+\cellcolor{gray} &  & \verb~51~ & & \verb~#pragma warning restore 612, 618~\\
+\cellcolor{red} & 0 & \verb~52~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~53~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~54~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{todo.Migrations.Changestitlemaxto40}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & todo.Migrations.Changestitlemaxto40\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{cts/4-Cs/todo/server/todo/Migrations/20250119011512\_Changes title max to 40.cs\\todo/server/todo/Migrations/20250119011512\_Changes title max to 40.Designer.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 58\\
+\textbf{Coverable lines:} & 58\\
+\textbf{Total lines:} & 99\\
+\textbf{Line coverage:} & 0\% (0 of 58)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 3\\
+\textbf{Method coverage:} & 0\% (0 of 3)\\
+\textbf{Full method coverage:} & 0\% (0 of 3)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{Up(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{BuildTargetModel(...} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{Down(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{cts/4-Cs/todo/server/todo/Migrations/20250119011512\_Changes title max to 40.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~    /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~    public partial class Changestitlemaxto40 : Migration~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~        protected override void Up(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~12~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~13~ & & \verb~            migrationBuilder.AlterColumn<string>(~\\
+\cellcolor{red} & 0 & \verb~14~ & & \verb~                name: "Title",~\\
+\cellcolor{red} & 0 & \verb~15~ & & \verb~                table: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~16~ & & \verb~                type: "varchar(40)",~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~                maxLength: 40,~\\
+\cellcolor{red} & 0 & \verb~18~ & & \verb~                nullable: false,~\\
+\cellcolor{red} & 0 & \verb~19~ & & \verb~                oldClrType: typeof(string),~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~                oldType: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~21~ & & \verb~                oldMaxLength: 20)~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4")~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                .OldAnnotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~26~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~        protected override void Down(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~            migrationBuilder.AlterColumn<string>(~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                name: "Title",~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                table: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                type: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~                maxLength: 20,~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                nullable: false,~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~                oldClrType: typeof(string),~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                oldType: "varchar(40)",~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                oldMaxLength: 40)~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4")~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                .OldAnnotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~41~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~42~ & & \verb~}~\\
+\end{longtable}
+\subsubsection{todo/server/todo/Migrations/20250119011512\_Changes title max to 40.Designer.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~// <auto-generated />~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using Microsoft.EntityFrameworkCore.Infrastructure;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using Microsoft.EntityFrameworkCore.Metadata;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~using Microsoft.EntityFrameworkCore.Storage.ValueConversion;~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~    [DbContext(typeof(ApplicationDbContext))]~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~    [Migration("20250119011512_Changes title max to 40")]~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~    partial class Changestitlemaxto40~\\
+\cellcolor{gray} &  & \verb~17~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~        protected override void BuildTargetModel(ModelBuilder modelBuilder)~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~        {~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~#pragma warning disable 612, 618~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~            modelBuilder~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                .HasAnnotation("ProductVersion", "8.0.2")~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~                .HasAnnotation("Relational:MaxIdentifierLength", 64);~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~            modelBuilder.Entity("Todo.Models.TodoItem", b =>~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                {~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                    b.Property<int>("Id")~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                        .ValueGeneratedOnAdd()~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                        .HasColumnType("int");~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                    b.Property<DateTime>("CreatedAt")~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                    b.Property<bool>("IsDone")~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~                        .HasColumnType("tinyint(1)");~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~                    b.Property<string>("Title")~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~                        .IsRequired()~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~                        .HasMaxLength(40)~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~                        .HasColumnType("varchar(40)");~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~                    b.Property<DateTime>("UpdatedAt")~\\
+\cellcolor{red} & 0 & \verb~48~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~49~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~                    b.HasKey("Id");~\\
+\cellcolor{red} & 0 & \verb~51~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~52~ & & \verb~                    b.ToTable("TodoItems");~\\
+\cellcolor{red} & 0 & \verb~53~ & & \verb~                });~\\
+\cellcolor{gray} &  & \verb~54~ & & \verb~#pragma warning restore 612, 618~\\
+\cellcolor{red} & 0 & \verb~55~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~56~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~57~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{todo.Migrations.Init}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & todo.Migrations.Init\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{tio/Objects/1-Projects/4-Cs/todo/server/todo/Migrations/20250116003723\_Init.cs\\ts/1-Projects/4-Cs/todo/server/todo/Migrations/20250116003723\_Init.Designer.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 55\\
+\textbf{Coverable lines:} & 55\\
+\textbf{Total lines:} & 99\\
+\textbf{Line coverage:} & 0\% (0 of 55)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 3\\
+\textbf{Method coverage:} & 0\% (0 of 3)\\
+\textbf{Full method coverage:} & 0\% (0 of 3)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{Up(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{BuildTargetModel(...} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{Down(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{tio/Objects/1-Projects/4-Cs/todo/server/todo/Migrations/20250116003723\_Init.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using Microsoft.EntityFrameworkCore.Metadata;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~    public partial class Init : Migration~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~        protected override void Up(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~14~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~15~ & & \verb~            migrationBuilder.AlterDatabase()~\\
+\cellcolor{red} & 0 & \verb~16~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{gray} &  & \verb~17~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~18~ & & \verb~            migrationBuilder.CreateTable(~\\
+\cellcolor{red} & 0 & \verb~19~ & & \verb~                name: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~                columns: table => new~\\
+\cellcolor{red} & 0 & \verb~21~ & & \verb~                {~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~                    Id = table.Column<int>(type: "int", nullable: false)~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~                    Title = table.Column<string>(type: "longtext", nullable: true)~\\
+\cellcolor{red} & 0 & \verb~25~ & & \verb~                        .Annotation("MySql:CharSet", "utf8mb4"),~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~                    IsDone = table.Column<bool>(type: "tinyint(1)", nullable: false),~\\
+\cellcolor{red} & 0 & \verb~27~ & & \verb~                    CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~                    UpdatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false)~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                },~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                constraints: table =>~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                {~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                    table.PrimaryKey("PK_TodoItems", x => x.Id);~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~                })~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~36~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~37~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~38~ & & \verb~        protected override void Down(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~            migrationBuilder.DropTable(~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~                name: "TodoItems");~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~43~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~44~ & & \verb~}~\\
+\end{longtable}
+\subsubsection{ts/1-Projects/4-Cs/todo/server/todo/Migrations/20250116003723\_Init.Designer.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~// <auto-generated />~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using Microsoft.EntityFrameworkCore.Infrastructure;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using Microsoft.EntityFrameworkCore.Metadata;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~using Microsoft.EntityFrameworkCore.Storage.ValueConversion;~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~    [DbContext(typeof(ApplicationDbContext))]~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~    [Migration("20250116003723_Init")]~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~    partial class Init~\\
+\cellcolor{gray} &  & \verb~17~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~        protected override void BuildTargetModel(ModelBuilder modelBuilder)~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~        {~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~#pragma warning disable 612, 618~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~            modelBuilder~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                .HasAnnotation("ProductVersion", "8.0.2")~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~                .HasAnnotation("Relational:MaxIdentifierLength", 64);~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~            modelBuilder.Entity("Todo.Models.TodoItem", b =>~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                {~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                    b.Property<int>("Id")~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                        .ValueGeneratedOnAdd()~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                        .HasColumnType("int");~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                    b.Property<DateTime>("CreatedAt")~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                    b.Property<bool>("IsDone")~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~                        .HasColumnType("tinyint(1)");~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~                    b.Property<string>("Title")~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~                        .HasColumnType("longtext");~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~                    b.Property<DateTime>("UpdatedAt")~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~48~ & & \verb~                    b.HasKey("Id");~\\
+\cellcolor{red} & 0 & \verb~49~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~                    b.ToTable("TodoItems");~\\
+\cellcolor{red} & 0 & \verb~51~ & & \verb~                });~\\
+\cellcolor{gray} &  & \verb~52~ & & \verb~#pragma warning restore 612, 618~\\
+\cellcolor{red} & 0 & \verb~53~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~54~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~55~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{todo.Migrations.Madetitlerequired}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & todo.Migrations.Madetitlerequired\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{rojects/4-Cs/todo/server/todo/Migrations/20250116015200\_Made title required.cs\\-Cs/todo/server/todo/Migrations/20250116015200\_Made title required.Designer.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 65\\
+\textbf{Coverable lines:} & 65\\
+\textbf{Total lines:} & 107\\
+\textbf{Line coverage:} & 0\% (0 of 65)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 3\\
+\textbf{Method coverage:} & 0\% (0 of 3)\\
+\textbf{Full method coverage:} & 0\% (0 of 3)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{Up(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{BuildTargetModel(...} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{Down(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{rojects/4-Cs/todo/server/todo/Migrations/20250116015200\_Made title required.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~    /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~    public partial class Madetitlerequired : Migration~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~        protected override void Up(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~12~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~13~ & & \verb~            migrationBuilder.UpdateData(~\\
+\cellcolor{red} & 0 & \verb~14~ & & \verb~                table: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~15~ & & \verb~                keyColumn: "Title",~\\
+\cellcolor{red} & 0 & \verb~16~ & & \verb~                keyValue: null,~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~                column: "Title",~\\
+\cellcolor{red} & 0 & \verb~18~ & & \verb~                value: "");~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~            migrationBuilder.AlterColumn<string>(~\\
+\cellcolor{red} & 0 & \verb~21~ & & \verb~                name: "Title",~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~                table: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                type: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~                maxLength: 20,~\\
+\cellcolor{red} & 0 & \verb~25~ & & \verb~                nullable: false,~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~                oldClrType: typeof(string),~\\
+\cellcolor{red} & 0 & \verb~27~ & & \verb~                oldType: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~                oldMaxLength: 20,~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                oldNullable: true)~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4")~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                .OldAnnotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~33~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~34~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~35~ & & \verb~        protected override void Down(MigrationBuilder migrationBuilder)~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~            migrationBuilder.AlterColumn<string>(~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~                name: "Title",~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                table: "TodoItems",~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~                type: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~                maxLength: 20,~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~                nullable: true,~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~                oldClrType: typeof(string),~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~                oldType: "varchar(20)",~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~                oldMaxLength: 20)~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~                .Annotation("MySql:CharSet", "utf8mb4")~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~                .OldAnnotation("MySql:CharSet", "utf8mb4");~\\
+\cellcolor{red} & 0 & \verb~48~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~49~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~50~ & & \verb~}~\\
+\end{longtable}
+\subsubsection{-Cs/todo/server/todo/Migrations/20250116015200\_Made title required.Designer.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~// <auto-generated />~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using Microsoft.EntityFrameworkCore.Infrastructure;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using Microsoft.EntityFrameworkCore.Metadata;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~using Microsoft.EntityFrameworkCore.Migrations;~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~using Microsoft.EntityFrameworkCore.Storage.ValueConversion;~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~#nullable disable~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~namespace todo.Migrations~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~    [DbContext(typeof(ApplicationDbContext))]~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~    [Migration("20250116015200_Made title required")]~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~    partial class Madetitlerequired~\\
+\cellcolor{gray} &  & \verb~17~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~        /// <inheritdoc />~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~        protected override void BuildTargetModel(ModelBuilder modelBuilder)~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~        {~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~#pragma warning disable 612, 618~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~            modelBuilder~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~                .HasAnnotation("ProductVersion", "8.0.2")~\\
+\cellcolor{red} & 0 & \verb~24~ & & \verb~                .HasAnnotation("Relational:MaxIdentifierLength", 64);~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~            modelBuilder.Entity("Todo.Models.TodoItem", b =>~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                {~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                    b.Property<int>("Id")~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                        .ValueGeneratedOnAdd()~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                        .HasColumnType("int");~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                    b.Property<DateTime>("CreatedAt")~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                    b.Property<bool>("IsDone")~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~                        .HasColumnType("tinyint(1)");~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~                    b.Property<string>("Title")~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~                        .IsRequired()~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~                        .HasMaxLength(20)~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~                        .HasColumnType("varchar(20)");~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~                    b.Property<DateTime>("UpdatedAt")~\\
+\cellcolor{red} & 0 & \verb~48~ & & \verb~                        .HasColumnType("datetime(6)");~\\
+\cellcolor{red} & 0 & \verb~49~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~                    b.HasKey("Id");~\\
+\cellcolor{red} & 0 & \verb~51~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~52~ & & \verb~                    b.ToTable("TodoItems");~\\
+\cellcolor{red} & 0 & \verb~53~ & & \verb~                });~\\
+\cellcolor{gray} &  & \verb~54~ & & \verb~#pragma warning restore 612, 618~\\
+\cellcolor{red} & 0 & \verb~55~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~56~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~57~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{Todo.Models.TodoItem}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Todo.Models.TodoItem\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{rs/chrisluttio/Objects/1-Projects/4-Cs/todo/server/todo/src/Models/TodoItem.cs}\end{minipage} \\
+\textbf{Covered lines:} & 5\\
+\textbf{Uncovered lines:} & 0\\
+\textbf{Coverable lines:} & 5\\
+\textbf{Total lines:} & 13\\
+\textbf{Line coverage:} & 100\% (5 of 5)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 5\\
+\textbf{Fully covered methods:} & 5\\
+\textbf{Total methods:} & 5\\
+\textbf{Method coverage:} & 100\% (5 of 5)\\
+\textbf{Full method coverage:} & 100\% (5 of 5)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{get\_Id()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{get\_Title()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{get\_IsDone()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{get\_CreatedAt()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{get\_UpdatedAt()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{rs/chrisluttio/Objects/1-Projects/4-Cs/todo/server/todo/src/Models/TodoItem.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System.ComponentModel.DataAnnotations;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~namespace Todo.Models {~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~    public class TodoItem {~\\
+\cellcolor{green} & 64 & \verb~5~ & & \verb~        public int Id { get; set; }~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~        [MaxLength(40)]~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~        [Required]~\\
+\cellcolor{green} & 54 & \verb~8~ & & \verb~        public string? Title { get; set; }~\\
+\cellcolor{green} & 43 & \verb~9~ & & \verb~        public bool IsDone { get; set; } = false;~\\
+\cellcolor{green} & 43 & \verb~10~ & & \verb~        public DateTime CreatedAt { get; set; } = DateTime.Now;~\\
+\cellcolor{green} & 43 & \verb~11~ & & \verb~        public DateTime UpdatedAt { get; set; } = DateTime.Now;~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{Todo.Program}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Todo.Program\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{/Users/chrisluttio/Objects/1-Projects/4-Cs/todo/server/todo/Program.cs}\end{minipage} \\
+\textbf{Covered lines:} & 0\\
+\textbf{Uncovered lines:} & 37\\
+\textbf{Coverable lines:} & 37\\
+\textbf{Total lines:} & 62\\
+\textbf{Line coverage:} & 0\% (0 of 37)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 2\\
+\textbf{Branch coverage:} & 0\% (0 of 2)\\
+\textbf{Covered methods:} & 0\\
+\textbf{Fully covered methods:} & 0\\
+\textbf{Total methods:} & 3\\
+\textbf{Method coverage:} & 0\% (0 of 3)\\
+\textbf{Full method coverage:} & 0\% (0 of 3)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{Main(...)} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{ConfigureServices(..} & 100\% & 2 & 1 & 0\%\\
+\hline
+\textbf{ConfigureApp(...)} & 0\% & 6 & 2 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{/Users/chrisluttio/Objects/1-Projects/4-Cs/todo/server/todo/Program.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System.Text;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using Todo.Services;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~namespace Todo~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~    public class Program~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~        public static void Main(string[] args)~\\
+\cellcolor{red} & 0 & \verb~11~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~12~ & & \verb~            var builder = WebApplication.CreateBuilder(args);~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~            // Add services to the container~\\
+\cellcolor{red} & 0 & \verb~15~ & & \verb~            ConfigureServices(builder.Services, builder.Configuration);~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~            var app = builder.Build();~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~            // Configure the HTTP request pipeline~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~            ConfigureApp(app);~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~            app.Run();~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~24~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~25~ & & \verb~        private static void ConfigureServices(IServiceCollection services, IConfiguration configuration)~\\
+\cellcolor{red} & 0 & \verb~26~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~27~ & & \verb~            var connectionString = configuration.GetConnectionString("DefaultConnection");~\\
+\cellcolor{red} & 0 & \verb~28~ & & \verb~            services.AddDbContext<ApplicationDbContext>(options =>~\\
+\cellcolor{red} & 0 & \verb~29~ & & \verb~                options.UseMySql(~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~                    connectionString,~\\
+\cellcolor{red} & 0 & \verb~31~ & & \verb~                    ServerVersion.AutoDetect(connectionString),~\\
+\cellcolor{red} & 0 & \verb~32~ & & \verb~                    mysqlOptions =>~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~                    {~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~                        mysqlOptions.EnableRetryOnFailure(~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~                            maxRetryCount: 3,~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~                            maxRetryDelay: TimeSpan.FromSeconds(5),~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                            errorNumbersToAdd: null);~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~                    }~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~                ));~\\
+\cellcolor{gray} &  & \verb~40~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~            services.AddScoped<ITodoItemsService, TodoItemsService>();~\\
+\cellcolor{red} & 0 & \verb~42~ & & \verb~            services.AddScoped<ITodoRepository, TodoRepository>();~\\
+\cellcolor{gray} &  & \verb~43~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~            services.AddControllers();~\\
+\cellcolor{red} & 0 & \verb~45~ & & \verb~            services.AddEndpointsApiExplorer();~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~            services.AddSwaggerGen();~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~48~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~49~ & & \verb~        private static void ConfigureApp(WebApplication app)~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~51~ & & \verb~            if (app.Environment.IsDevelopment())~\\
+\cellcolor{red} & 0 & \verb~52~ & & \verb~            {~\\
+\cellcolor{red} & 0 & \verb~53~ & & \verb~                app.UseSwagger();~\\
+\cellcolor{red} & 0 & \verb~54~ & & \verb~                app.UseSwaggerUI();~\\
+\cellcolor{red} & 0 & \verb~55~ & & \verb~            }~\\
+\cellcolor{gray} &  & \verb~56~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~57~ & & \verb~            app.UseHttpsRedirection();~\\
+\cellcolor{red} & 0 & \verb~58~ & & \verb~            app.UseAuthorization();~\\
+\cellcolor{red} & 0 & \verb~59~ & & \verb~            app.MapControllers();~\\
+\cellcolor{red} & 0 & \verb~60~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~61~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~62~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{Todo.Services.TodoItemsService}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Todo.Services.TodoItemsService\\
+\textbf{Assembly:} & todo\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{ttio/Objects/1-Projects/4-Cs/todo/server/todo/src/Services/TodoItemsService.cs}\end{minipage} \\
+\textbf{Covered lines:} & 31\\
+\textbf{Uncovered lines:} & 0\\
+\textbf{Coverable lines:} & 31\\
+\textbf{Total lines:} & 49\\
+\textbf{Line coverage:} & 100\% (31 of 31)\\
+\textbf{Covered branches:} & 2\\
+\textbf{Total branches:} & 2\\
+\textbf{Branch coverage:} & 100\% (2 of 2)\\
+\textbf{Covered methods:} & 7\\
+\textbf{Fully covered methods:} & 6\\
+\textbf{Total methods:} & 7\\
+\textbf{Method coverage:} & 100\% (7 of 7)\\
+\textbf{Full method coverage:} & 85.7\% (6 of 7)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Crap Score} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{.ctor(...)} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{GetTodoItemsAsync()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{GetTodoItemAsync()} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{CreateTodoItemAsync(} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{UpdateTodoItemAsync(} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{DeleteTodoItemAsync(} & 100\% & 1 & 1 & 100\%\\
+\hline
+\textbf{DeleteTodoItemsAsync} & 100\% & 2 & 2 & 100\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{ttio/Objects/1-Projects/4-Cs/todo/server/todo/src/Services/TodoItemsService.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using Microsoft.EntityFrameworkCore;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using Todo.Data;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using Todo.Models;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~namespace Todo.Services {~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~    public class TodoItemsService: ITodoItemsService {~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~        private readonly ITodoRepository _repository;~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~~\\
+\cellcolor{green} & 18 & \verb~9~ & & \verb~        public TodoItemsService(ITodoRepository repository) {~\\
+\cellcolor{green} & 9 & \verb~10~ & & \verb~            _repository = repository;~\\
+\cellcolor{green} & 9 & \verb~11~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~~\\
+\cellcolor{green} & 1 & \verb~13~ & & \verb~        public async Task<IEnumerable<TodoItem>> GetTodoItemsAsync() {~\\
+\cellcolor{green} & 1 & \verb~14~ & & \verb~            return await _repository.GetAllAsync();~\\
+\cellcolor{green} & 1 & \verb~15~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~~\\
+\cellcolor{green} & 2 & \verb~17~ & & \verb~        public async Task<TodoItem?> GetTodoItemAsync(int id) {~\\
+\cellcolor{green} & 2 & \verb~18~ & & \verb~            return await _repository.GetByIdAsync(id);~\\
+\cellcolor{green} & 2 & \verb~19~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~20~ & & \verb~~\\
+\cellcolor{green} & 1 & \verb~21~ & & \verb~        public async Task<TodoItem> CreateTodoItemAsync(TodoItem item) {~\\
+\cellcolor{green} & 1 & \verb~22~ & & \verb~            await _repository.AddAsync(item);~\\
+\cellcolor{green} & 1 & \verb~23~ & & \verb~            await _repository.SaveChangesAsync();~\\
+\cellcolor{green} & 1 & \verb~24~ & & \verb~            return item;~\\
+\cellcolor{green} & 1 & \verb~25~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~26~ & & \verb~~\\
+\cellcolor{green} & 1 & \verb~27~ & & \verb~        public async Task UpdateTodoItemAsync(TodoItem item) {~\\
+\cellcolor{green} & 1 & \verb~28~ & & \verb~            await _repository.UpdateAsync(item);~\\
+\cellcolor{green} & 1 & \verb~29~ & & \verb~            await _repository.SaveChangesAsync();~\\
+\cellcolor{green} & 1 & \verb~30~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~31~ & & \verb~~\\
+\cellcolor{green} & 2 & \verb~32~ & & \verb~        public async Task<bool> DeleteTodoItemAsync(int id) {~\\
+\cellcolor{green} & 2 & \verb~33~ & & \verb~            var result = await DeleteTodoItemsAsync([id]);~\\
+\cellcolor{green} & 2 & \verb~34~ & & \verb~            return result.Any();~\\
+\cellcolor{green} & 2 & \verb~35~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~36~ & & \verb~~\\
+\cellcolor{green} & 4 & \verb~37~ & & \verb~        public async Task<IEnumerable<int>> DeleteTodoItemsAsync(IEnumerable<int> ids) {~\\
+\cellcolor{green} & 4 & \verb~38~ & & \verb~            var items = await _repository.GetByIdsAsync(ids);~\\
+\cellcolor{green} & 4 & \verb~39~ & & \verb~            var itemsList = items.ToList();~\\
+\cellcolor{gray} &  & \verb~40~ & & \verb~~\\
+\cellcolor{green} & 4 & \verb~41~ & & \verb~            if (!itemsList.Any())~\\
+\cellcolor{green} & 2 & \verb~42~ & & \verb~                return Enumerable.Empty<int>();~\\
+\cellcolor{gray} &  & \verb~43~ & & \verb~~\\
+\cellcolor{green} & 2 & \verb~44~ & & \verb~            await _repository.RemoveRangeAsync(itemsList);~\\
+\cellcolor{green} & 2 & \verb~45~ & & \verb~            await _repository.SaveChangesAsync();~\\
+\cellcolor{green} & 4 & \verb~46~ & & \verb~            return itemsList.Select(item => item.Id);~\\
+\cellcolor{green} & 4 & \verb~47~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~48~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~49~ & & \verb~}~\\
+\end{longtable}
+\end{document}

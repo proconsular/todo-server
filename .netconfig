@@ -1,0 +1,4 @@
+[ReportGenerator]
+	reports = "./todo.Tests/TestResults/**/coverage.cobertura.xml"
+	targetdir = "./todo.Tests/CoverageReports"
+	reporttypes = "HtmlSummary"
